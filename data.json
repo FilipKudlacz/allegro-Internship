@@ -1,9 +1,11 @@
 [{
     "name":"John",
-    "updated": "dwudziesty pierwszy"
+    "updated_at": "dwudziesty pierwszy",
+    "real_name": "abcd"
   },
   {
     "name":"Anna",
-    "updated": "dwudziestydrugi"
+    "updated_at": "dwudziestydrugi",
+    "real_name": "efgh"
   }
   ]
