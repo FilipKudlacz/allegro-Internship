@@ -20,7 +20,8 @@ public class IndexController {
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     String mainEvent() {
-        return Integer.toString(repoService.repos.size());
+
+        return repoService.getNameOfLastUpdatedRepo();
     }
 
 }

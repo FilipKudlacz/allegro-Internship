@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import org.joda.time.DateTime;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -16,7 +17,7 @@ public class Repo {
     private String name;
 
     @JsonProperty("updated_at")
-    private String updated;
+    private DateTime updated;
 
     public String getName() {
         return name;
@@ -27,12 +28,12 @@ public class Repo {
     }
 
     @JsonProperty("updated_at")
-    public String getUpdated() {
+    public DateTime getUpdated() {
         return updated;
     }
 
     @JsonProperty("updated_at")
-    public void setUpdated(String updated) {
+    public void setUpdated(DateTime updated) {
         this.updated = updated;
     }
 }
